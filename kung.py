@@ -11,8 +11,10 @@ from random import randint
 play_game = "J"
 player_one_score = 0  # initiera innan loopen för att den ska kunna behålla värdet
 player_two_score = 0  # snake_case
+game_round = 0
 
 while play_game.upper() == "J":
+    game_round += 1
     player_one_roll = randint(1, 6)
     player_two_roll = randint(1, 6)
 
@@ -30,11 +32,14 @@ while play_game.upper() == "J":
         )
 
     if player_one_score >= 2:
-        print(f"Spelare ett vann med {player_one_score} över {player_two_score}.")
+        print(f"Efter {game_round} rundor vann spelare ett med {player_one_score} över {player_two_score}.")
         play_game = "n"
     elif player_two_score >= 2:
-        print(f"Spelare två vann med {player_two_score} över {player_one_score}.")
+        print(f"Efter {game_round} rundor vann spelare två med {player_two_score} över {player_one_score}.")
         play_game = "n"
+    elif game_round >= 3:
+      print(f"Efter {game_round} rundor har ingen spelare vunnit. Poängen för spelare ett är: {player_one_score} och för spelare två: {player_two_score}.")
+      play_game = "n"
 
     # play_game = input("Vill du spela igen? [J/N]: ")
 
