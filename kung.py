@@ -1,18 +1,12 @@
 # En version av kung king, nånting, högsta kortet vinner
-
 # Två spelare
-
 # Spelare 1 rullar tärning
-
 # Spelare 2 rullar tärning
-
 # Vem rullade högst
-
 # Högst vinner rundan
-
 # Upprepa, till vi har en vinnare av spelet, bäst av tre
 
-
+"""Using randint from random module"""
 from random import randint
 
 RUN = True
