@@ -8,6 +8,7 @@
 # Om du lökar så står du stilla och tittar dig omkring
 # När du lökar finns det en 50% chans att du hittar något spännande 
 # items = ["vättejos", "kantarell", "ekorre", "sten"]
+# random.choice(items)
 # det finns även en 20% chans att du möter en person på din vandring
 # Om du äter vättejos så blir du sjuk och förlorar 1 liv
 # Om du äter kantarell så blir du mätt och får 1 liv
